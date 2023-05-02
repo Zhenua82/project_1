@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title2 }}</h1>
+{% for i in human %}
+        <div>
+            <p> {{i.Name}} {{i.Last_name}}</p>
+            <p> Возраст: {{i.age}} лет</p>
+            <p> Профессия: {{i.profession}}</p>
+        </div>
+        <hr>
+{% endfor %}
+
+</body>
+</html>
