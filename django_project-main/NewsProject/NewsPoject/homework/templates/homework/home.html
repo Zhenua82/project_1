@@ -51,9 +51,13 @@
                     <div class="media-body">
                         <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{i.Name}} {{i.Last_name}}</h5>
                         <p class="card-text">Возраст: {{i.age}} лет</p>
-                        {% autoescape off %}
-                        <p class="card-text ">Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>
-                        {% endautoescape %}
+                        <p class="card-text ">
+                            {% if i.biography %}
+                        <h6> Биография: </h6>{{i.biography|truncatewords:60}}</p>
+                            {% else %}
+                        <h6> Биография: нет </h6>
+                            {% endif %}
+<!--                            Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>-->
                         <a href="#" class="btn btn-primary">Read more...</a>
                     </div>
                 </div>
