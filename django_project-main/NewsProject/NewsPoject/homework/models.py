@@ -9,6 +9,7 @@ class Human(models.Model):
     photo = models.ImageField(upload_to='media/%Y/%m/%d', verbose_name='Фото')
     is_published = models.BooleanField(default=True, verbose_name='Публикация')
     profess = models.ForeignKey('Profession', on_delete=models.PROTECT, null=True, verbose_name='Профессия')
+
     class Meta:
         verbose_name='людей'
         verbose_name_plural='Люди'
