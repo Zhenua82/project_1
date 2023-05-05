@@ -49,16 +49,17 @@
                         {% endif %}
                     </div>
                     <div class="media-body">
+                        <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{i.Name}} {{i.Last_name}}</h5>
+                        <p class="card-text">Возраст: {{i.age}} лет</p>
                         {% autoescape off %}
-                        <h5 class="card-title">{{i.Name}} {{i.Last_name}}</h5>
+                        <p class="card-text ">Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>
                         {% endautoescape %}
-                        <p class="card-text {% cycle 'text-primary' 'text-success' 'text-danger' %}">Возраст: {{i.age}} лет</p>
                         <a href="#" class="btn btn-primary">Read more...</a>
                     </div>
                 </div>
 
                 <div class="card-footer text-body-secondary">
-                    Профессия: {{i.profess}}
+                    Профессия: {{i.profession}}
                 </div>
             </div>
             {% endfor %}

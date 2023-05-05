@@ -3,10 +3,10 @@ from .models import Human, Profession
 
 
 class HumanAdmin(admin.ModelAdmin):
-    list_display = ('id', 'Name', 'Last_name', 'age', 'profess', 'photo', 'is_published')
+    list_display = ('id', 'Name', 'Last_name', 'age', 'biography', 'profession', 'photo', 'is_published')
     list_display_links = ('id', 'Name')
     search_fields = ('Name', 'Last_name')
-    list_editable = ['is_published', 'profess']
+    list_editable = ['is_published', 'profession']
 
 class ProfessionAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')

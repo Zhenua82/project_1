@@ -5,11 +5,10 @@ class Human(models.Model):
     Name = models.CharField(max_length=150, verbose_name='Имя')
     Last_name = models.TextField(blank=True, verbose_name='Фамилия')
     age = models.IntegerField(verbose_name='Возраст')
-    profession = models.CharField(max_length=150)
     photo = models.ImageField(upload_to='media/%Y/%m/%d', verbose_name='Фото')
     is_published = models.BooleanField(default=True, verbose_name='Публикация')
-    profess = models.ForeignKey('Profession', on_delete=models.PROTECT, null=True, verbose_name='Профессия')
-
+    profession = models.ForeignKey('Profession', on_delete=models.PROTECT, null=True, verbose_name='Профессия')
+    biography = models.TextField(blank=True, verbose_name='Биография')
     class Meta:
         verbose_name='людей'
         verbose_name_plural='Люди'
