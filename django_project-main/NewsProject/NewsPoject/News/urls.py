@@ -2,9 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-from News.views import index
+from News.views import index, get_category
 
 urlpatterns = [
-    path('', index),
+    path('', index, name='Nnews'),
     path('homework/', include('homework.urls')),
+    path('category/<int:category_id>', get_category, name='Category')
 ]
