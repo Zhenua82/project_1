@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/list_categories.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/human_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/list_profession.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebarhome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/profession.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/profession.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +48,13 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/RobotComp.ru/OneDrive/Рабочий стол/project_1-main/django_project-main/NewsProject/NewsPoject"
+    "last_opened_file_path": "D:/Homework/Django/django_project-main/NewsProject/NewsPoject/News/templatetags"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Homework\Django\django_project-main\NewsProject\NewsPoject\News\templatetags" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Homework\Django\django_project-main\NewsProject\NewsPoject" />
       <recent name="D:\Homework\Django\django_project-main\NewsProject\NewsPoject\News\templates\News" />

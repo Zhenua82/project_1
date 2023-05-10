@@ -10,5 +10,3 @@ def get_categories():
 def show_categories(arg1='Перечень', arg2='категорий'):
     categories = Category.objects.all()
     return {'categories': categories, 'arg1': arg1, 'arg2': arg2}
-
-
