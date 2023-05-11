@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class News(models.Model):
@@ -9,6 +10,9 @@ class News(models.Model):
     photo = models.ImageField(upload_to='media/%Y/%m/%d', verbose_name='Фото')
     is_published = models.BooleanField(default=True, verbose_name='Публикация')
     category = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, verbose_name='Категория')
+
+    def get_absolute_url(self):
+        return reverse_lazy('view_news', kwargs={'news_id': self.pk})
     class Meta:
         verbose_name='Новость'
         verbose_name_plural='Новости'
@@ -16,7 +20,8 @@ class News(models.Model):
 
 class Category(models.Model):
     title = models.CharField(max_length=150, db_index=True, verbose_name='Категория')
-
+    def get_absolute_url(self):
+        return reverse_lazy('Category', kwargs={'category_id': self.pk})
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'

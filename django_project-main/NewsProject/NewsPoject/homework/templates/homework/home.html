@@ -12,7 +12,7 @@
 
 {% block content %}
 {% for i in human %}
-<div class="card mb-3">
+<div class="card mb-3" style='background-color: #ebe4ab'>
     <h4> Порядковый номер: {{ forloop.counter }} </h4>
     <div class="card-header {% cycle 'text-primary' 'text-success' 'text-danger' %}">
         Базовый номер: {{ i.id }}
@@ -36,12 +36,12 @@
             <h6> Биография: нет </h6>
             {% endif %}
             <!--                            Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>-->
-            <a href="#" class="btn btn-primary">Read more...</a>
+            <a href="{{i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
         </div>
     </div>
 
-    <div class="card-footer text-body-secondary">
-        Профессия: <a href="{% url 'Profession' i.profession.id %}"> {{i.profession}} </a>
+    <div class="card-footer text-body-secondary" style='background-color: #c8ecca'>
+        Профессия: <a href="{{i.profession.get_absolute_url }}"> {{i.profession}} </a>
     </div>
 </div>
 {% endfor %}
