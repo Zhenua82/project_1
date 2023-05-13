@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Human, Profession
+from .forms import HumanForm
 
 def home(request):
     human = Human.objects.all()
@@ -29,3 +30,14 @@ def human_1(request, human_id):
         'human_i': human_i
     }
     return render(request, 'homework/human_1.html', context=context)
+
+def add_human(request):
+    if request.method == 'POST':
+        form = HumanForm(request.POST)
+        if form.is_valid():
+            # human = Human.objects.create(**form.cleaned_data)
+            human = form.save()
+            return redirect(human)
+    else:
+        form = HumanForm()
+    return render(request, 'homework/add_human.html', {'form': form})
