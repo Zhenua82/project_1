@@ -14,24 +14,19 @@
     <div class="card mb-3">
         {{ forloop.counter }}
         <div class="card-header">
-            Категория: <a href="{{ i.category.get_absolute_url }}"> {{news_i.category}} </a>
+            Категория: <a href="{{ news_i.category.get_absolute_url }}"> {{news_i.category}} </a>
         </div>
-        <div class="media" style="display: flex">
-            <div class="media-photo">
-                {% if i.photo %}
+            <div class="card-body">
+                {% if news_i.photo %}
                 <img src="{{ news_i.photo.url }}" class="mr-3" width="350" alt="Photo">
                 {% else %}
                 <h6> Фото нет </h6>
                 {% endif %}
             </div>
-            <div class="media-body">
                 <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{news_i.title}}</h5>
                 {% autoescape off %}
-                <p class="card-text">{{news_i.content|truncatewords:60|linebreaks }}</p>
+                <p class="card-text">{{news_i.content|linebreaks }}</p>
                 {% endautoescape %}
-                <a href="#" class="btn btn-primary">Read more...</a>
-            </div>
-        </div>
         <div class="card-footer text-body-secondary">
             {{ news_i.created_at|date:'Y-m-d H:i' }}
         </div>
