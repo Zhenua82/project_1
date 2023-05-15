@@ -11,7 +11,8 @@ class Human(models.Model):
     biography = models.TextField(blank=True, verbose_name='Биография')
 
     def get_absolute_url(self):
-        return reverse_lazy('Human_1', kwargs={'human_id': self.pk})
+        # return reverse_lazy('Human_1', kwargs={'human_id': self.pk})
+        return reverse_lazy('Human_1', kwargs={'pk': self.pk})
     class Meta:
         verbose_name='людей'
         verbose_name_plural='Люди'

@@ -18,7 +18,7 @@
     </div>
     <div class="media" style="display: flex">
         <div class="media-photo">
-            {% if i.photo %}
+            {% if human_i.photo %}
             <img src="{{ human_i.photo.url }}" class="mr-3" width="350" alt="Photo">
             {% else %}
             <h6> Фото нет </h6>
@@ -30,17 +30,16 @@
             <p class="card-text">Возраст: {{human_i.age}} лет</p>
             <p class="card-text ">
                 {% if human_i.biography %}
-            <h6> Биография: </h6>{{human_i.biography|truncatewords:60}}</p>
+            <h6> Биография: </h6>{{human_i.biography}}</p>
             {% else %}
             <h6> Биография: нет </h6>
             {% endif %}
             <!--                            Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>-->
-            <a href="#" class="btn btn-primary">Read more...</a>
         </div>
     </div>
 
     <div class="card-footer text-body-secondary" style='background-color: #c8ecca'>
-        Профессия: <a href="{{i.profession.get_absolute_url }}"> {{i.profession}} </a>
+        Профессия: <a href="{{human_i.profession.get_absolute_url }}"> {{human_i.profession}} </a>
     </div>
 </div>
 

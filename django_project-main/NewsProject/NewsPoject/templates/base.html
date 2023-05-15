@@ -11,10 +11,9 @@
 <!--          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">-->
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
 </head>
 <body>
-<div class="container mt-3">
+<div class="container mt-3" style="margin-left: 0px;">
     <h1> {{title}} </h1>
     <div class="row">
         <div class="col-md-4">
@@ -23,47 +22,6 @@
         <div class="col-md-8">
             {% block content %} CONTENT {% endblock %}
         </div>
-
-    {% comment %}
-        <div class="col-md-4">
-            <div class="list-group">
-                {% for cat in categories %}
-                <a href="{% url 'Category' cat.id %}" class="list-group-item list-group-item-action">{{ cat.title }}</a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="col-md-8">
-            {% for i in news %}
-            <div class="card mb-3">
-                {{ forloop.counter }}
-                <div class="card-header">
-                    Категория: <a href="{% url 'Category' i.category.id %}"> {{i.category}} </a>
-                </div>
-                <div class="media" style="display: flex">
-                    <div class="media-photo">
-                        {% if i.photo %}
-                        <img src="{{ i.photo.url }}" class="mr-3" width="350" alt="Photo">
-                        {% else %}
-                        <h6> Фото нет </h6>
-                        {% endif %}
-                    </div>
-                    <div class="media-body">
-                        <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{i.title}}</h5>
-                        {% autoescape off %}
-                        <p class="card-text">{{i.content|truncatewords:60|linebreaks }}</p>
-                        {% endautoescape %}
-                        <a href="#" class="btn btn-primary">Read more...</a>
-                    </div>
-                </div>
-                <div class="card-footer text-body-secondary">
-                    {{ i.created_at|date:'Y-m-d H:i' }}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        {% endcomment %}
-
     </div>
 </div>
 

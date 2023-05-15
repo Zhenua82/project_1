@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/news_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/view_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/view_news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/add_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/add_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/list_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/list_categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/human_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/human_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Homework/Django/django_project-main/NewsProject/NewsPoject/homework/templates/homework"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Homework/Django/django_project-main/NewsProject/NewsPoject/homework/templates/homework&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Homework\Django\django_project-main\NewsProject\NewsPoject\homework\templates\homework" />
