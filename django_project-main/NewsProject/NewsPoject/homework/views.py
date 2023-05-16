@@ -14,8 +14,8 @@ class home(ListView):
         context['title'] = 'Список людей'
         return context
     def get_queryset(self):
-        return Human.objects.filter(is_published=True)
-
+        # return Human.objects.filter(is_published=True).select_related('profession')
+        return Human.objects.filter().select_related('profession')
 class get_profession(ListView):
     model = Human
     template_name = 'homework/home.html'
@@ -23,12 +23,11 @@ class get_profession(ListView):
     allow_empty = True
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = Profession.objects.get(pk=self.kwargs['profession_id'])
+        context['title'] = Profession.objects.get(pk=self.kwargs['profession_id']).title
         return context
 
     def get_queryset(self):
-        return Human.objects.filter(profession_id=self.kwargs['profession_id'], is_published=True)
-
+        return Human.objects.filter(profession_id=self.kwargs['profession_id'], is_published=True).select_related('profession')
 
 class human_1(DetailView):
     model = Human

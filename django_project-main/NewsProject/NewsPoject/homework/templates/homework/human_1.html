@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{ title }}
+    Человек {{ title }}
 {% endblock %}
 
 {% block _nav %}  {% endblock %}
@@ -11,8 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="card mb-3" style='background-color: #ebe4ab'>
-    <h4> Порядковый номер: {{ forloop.counter }} </h4>
+<div class="card mb-3" style='background-color: #ebe4ab; width: 1100px'>
     <div class="card-header {% cycle 'text-primary' 'text-success' 'text-danger' %}">
         Базовый номер: {{ human_i.id }}
     </div>
@@ -39,7 +38,7 @@
     </div>
 
     <div class="card-footer text-body-secondary" style='background-color: #c8ecca'>
-        Профессия: <a href="{{human_i.profession.get_absolute_url }}"> {{human_i.profession}} </a>
+        Профессия: <a href="{{human_i.profession.get_absolute_url }}"> {{human_i.profession.title}} </a>
     </div>
 </div>
 

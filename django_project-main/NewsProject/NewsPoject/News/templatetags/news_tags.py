@@ -11,5 +11,6 @@ def get_categories():
 @register.inclusion_tag('News/list_categories.html')
 def show_categories(arg1='Перечень', arg2='категорий'):
     # categories = Category.objects.all()
-    categories = Category.objects.annotate(cnt=Count('news')).filter(cnt__gt=0)
+    # categories = Category.objects.annotate(cnt=Count('news')).filter(cnt__gt=0)
+    categories = Category.objects.annotate(cnt=Count('news'))
     return {'categories': categories, 'arg1': arg1, 'arg2': arg2}
