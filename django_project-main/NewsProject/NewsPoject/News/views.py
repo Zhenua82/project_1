@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import News, Category
 from .forms import NewsForm
@@ -23,7 +24,7 @@ class NewsByCategory(ListView):
     allow_empty = False
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = Category.objects.get(pk=self.kwargs['category_id'])
+        context['title'] = Category.objects.get(pk=self.kwargs['category_id']).title
         return context
 
     def get_queryset(self):
@@ -32,9 +33,11 @@ class ViewNews(DetailView):
     model = News
     context_object_name = 'news_i'
     template_name = 'News/view_news.html'
-class AddNews(CreateView):
+class AddNews(LoginRequiredMixin, CreateView):
     form_class = NewsForm
     template_name = 'News/add_news.html'
+    login_url = '/admin/'
+    # redirect_field_name = "redirect_to"
 
 # def index(request):
 #     news = News.objects.all()

@@ -1,0 +1,3 @@
+class Mymixin(object):
+ pass
+

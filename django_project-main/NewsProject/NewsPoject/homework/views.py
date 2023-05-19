@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Human, Profession
 from .forms import HumanForm
@@ -34,9 +35,11 @@ class human_1(DetailView):
     context_object_name = 'human_i'
     template_name = 'homework/human_1.html'
 
-class add_human(CreateView):
+class add_human(LoginRequiredMixin, CreateView):
     form_class = HumanForm
     template_name = 'homework/add_human.html'
+    login_url = '/admin/'
+    # redirect_field_name = "redirect_to"
 
 # def home(request):
 #     human = Human.objects.all()
