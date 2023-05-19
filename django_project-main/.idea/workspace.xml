@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/static/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/admin/base_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/static/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

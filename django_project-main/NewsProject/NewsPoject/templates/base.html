@@ -24,7 +24,33 @@
         </div>
     </div>
 </div>
-
+{% if page_obj.has_other_pages %}
+<nav aria-label="..." style="margin-left: 800px;">
+  <ul class="pagination">
+      {% if page_obj.has_previous %}
+    <li class="page-item disabled">
+      <a class="page-link" href="?page={{ page.obj.previous_page_number }}">Пред...</a>
+    </li>
+      {% endif %}
+      {% for p in page_obj.paginator.page_range %}
+      {% if page_obj.number == p %}
+      <li class="page-item active" aria-current="page">
+          <a class="page-link" href="?page={{ p }}">{{ p }} <span class="sr-only"> (текущая) </span> </a>
+      </li>
+      {% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3  %}
+    <li class="page-item">
+        <a class="page-link" href="?page={{ p }}">{{ p }}</a>
+    </li>
+      {% endif %}
+      {% endfor %}
+      {% if page_obj.has_next %}
+    <li class="page-item disabled">
+      <a class="page-link" href="?page={{ page.obj.next_page_number }}">След...</a>
+    </li>
+      {% endif %}
+  </ul>
+</nav>
+{% endif %}
 <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"-->
 <!--        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"-->
 <!--        crossorigin="anonymous"></script>-->

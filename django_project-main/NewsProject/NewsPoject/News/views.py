@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.paginator import Paginator
 
 from .models import News, Category
 from .forms import NewsForm
@@ -10,6 +11,7 @@ class HomeNews(ListView):
     context_object_name = 'news'
     template_name = 'News/home_news_list.html'
     extra_context = {'title': 'Главная'}
+    paginate_by = 3
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Главная страница'
@@ -22,6 +24,7 @@ class NewsByCategory(ListView):
     template_name = 'News/home_news_list.html'
     context_object_name = 'news'
     allow_empty = False
+    paginate_by = 2
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = Category.objects.get(pk=self.kwargs['category_id']).title
@@ -38,6 +41,14 @@ class AddNews(LoginRequiredMixin, CreateView):
     template_name = 'News/add_news.html'
     login_url = '/admin/'
     # redirect_field_name = "redirect_to"
+
+
+# def test(request):
+#     objects = ['ohn', 'kjidsa', 'bbfk', 'hfhh', 'nbbkn', 'bdvkdj']
+#     paginator = Paginator(objects, 2)
+#     page_num = request.GET.get('page', 1)
+#     page_objects = paginator.get_page(page_num)
+#     return render(request, 'News/test.html', {'page_obj': page_objects})
 
 # def index(request):
 #     news = News.objects.all()
