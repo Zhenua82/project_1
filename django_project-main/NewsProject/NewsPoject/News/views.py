@@ -42,6 +42,18 @@ class AddNews(LoginRequiredMixin, CreateView):
     login_url = '/admin/'
     # redirect_field_name = "redirect_to"
 
+def test(request):
+    news = News.objects.all()
+    paginator = Paginator(news, 2)
+    page_num = request.GET.get('page', 1)
+    page_news = paginator.get_page(page_num)
+    categories = Category.objects.all()
+    context = {
+        'news': news,
+        'title': 'Список новостей',
+        'page_obj': page_news
+    }
+    return render(request, 'News/index.html', context=context)
 
 # def test(request):
 #     objects = ['ohn', 'kjidsa', 'bbfk', 'hfhh', 'nbbkn', 'bdvkdj']
@@ -49,6 +61,7 @@ class AddNews(LoginRequiredMixin, CreateView):
 #     page_num = request.GET.get('page', 1)
 #     page_objects = paginator.get_page(page_num)
 #     return render(request, 'News/test.html', {'page_obj': page_objects})
+
 
 # def index(request):
 #     news = News.objects.all()

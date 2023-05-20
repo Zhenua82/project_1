@@ -1,27 +1,43 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.paginator import Paginator
 
 from .models import Human, Profession
 from .forms import HumanForm
 
-class home(ListView):
-    model = Human
-    context_object_name = 'human'
-    template_name = 'homework/home.html'
-    extra_context = {'title': 'Список'}
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = 'Список людей'
-        return context
-    def get_queryset(self):
-        # return Human.objects.filter(is_published=True).select_related('profession')
-        return Human.objects.filter().select_related('profession')
+# class home(ListView):
+#     model = Human
+#     context_object_name = 'human'
+#     template_name = 'homework/home.html'
+#     extra_context = {'title': 'Список'}
+#     # paginate_by = 3
+#     def get_context_data(self, *, object_list=None, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         context['title'] = 'Список людей'
+#         return context
+#     def get_queryset(self):
+#         # return Human.objects.filter(is_published=True).select_related('profession')
+#         return Human.objects.filter().select_related('profession')
+def home(request):
+    human = Human.objects.all()
+    professions = Profession.objects.all()
+    paginator = Paginator(human, 3)
+    page_num = request.GET.get('page', 1)
+    page_human = paginator.get_page(page_num)
+    context = {
+        'human': human,
+        'title': 'Список людей',
+        'title2': 'Список людей:',
+        'page_obj': page_human
+    }
+    return render(request, 'homework/home.html', context=context)
 class get_profession(ListView):
     model = Human
     template_name = 'homework/home.html'
     context_object_name = 'human'
     allow_empty = True
+    paginate_by = 2
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = Profession.objects.get(pk=self.kwargs['profession_id']).title

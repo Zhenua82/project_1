@@ -11,7 +11,10 @@
 {% endblock %}
 
 {% block content %}
+{% for i in page_obj.object_list %}
+{% comment %}
 {% for i in human %}
+{% endcomment %}
 <div class="card mb-3" style='background-color: #ebe4ab; width: 1300px'>
     <h4> Порядковый номер: {{ forloop.counter }} </h4>
     <div class="card-header {% cycle 'text-primary' 'text-success' 'text-danger' %}">

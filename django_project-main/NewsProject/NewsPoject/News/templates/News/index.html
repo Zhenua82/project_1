@@ -11,7 +11,10 @@
 {% endblock %}
 
 {% block content %}
+    {% for i in page_obj.object_list %}
+{% comment %}
     {% for i in news %}
+{% endcomment %}
     <div class="card mb-3">
         {{ forloop.counter }}
         <div class="card-header">

@@ -6,10 +6,10 @@ from .models import Human, Profession
 
 class HumanAdmin(admin.ModelAdmin):
     list_display = ('id', 'Name', 'Last_name', 'age', 'profession', 'get_photo', 'is_published')
-    list_display_links = ('id', 'Name')
+    list_display_links = ('id', 'Name', 'Last_name')
     search_fields = ('Name', 'Last_name')
     list_editable = ['is_published', 'profession']
-    fields = ('Name', 'Last_name', 'age', 'biography', 'photo', 'get_photo', 'is_published')
+    fields = ('Name', 'Last_name', 'age', 'biography', 'profession', 'photo', 'get_photo', 'is_published')
     readonly_fields = ['get_photo']
 
     def get_photo(self, obj):
