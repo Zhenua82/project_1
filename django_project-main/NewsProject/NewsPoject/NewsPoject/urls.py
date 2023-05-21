@@ -8,7 +8,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('news/', include('News.urls')),
-    path('reg/', include('reg.urls')),
+    # path('reg/', include('reg.urls')),
 ]
 
 if settings.DEBUG:

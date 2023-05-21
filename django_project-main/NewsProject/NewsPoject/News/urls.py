@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-from News.views import HomeNews, NewsByCategory, AddNews, ViewNews, test, register, login
+from News.views import HomeNews, NewsByCategory, AddNews, ViewNews, test, register, user_login, user_logout
 # from News.views import index, get_category, view_news, add_news, test
 urlpatterns = [
     # path('', index, name='News'),
@@ -15,7 +15,8 @@ urlpatterns = [
     path('news/<int:pk>/', ViewNews.as_view(), name='View_news'),
     path('news/add_news', AddNews.as_view(), name='Add_news'),
     path('register', register, name='Register'),
-    path('login', login, name='Login'),
+    path('login', user_login, name='Login'),
+    path('logout/', user_logout, name='Logout'),
 
     path('homework/', include('homework.urls')),
 ]
