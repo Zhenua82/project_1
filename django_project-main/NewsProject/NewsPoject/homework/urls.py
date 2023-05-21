@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from homework.views import home, get_profession, human_1, add_human
 
@@ -12,4 +12,5 @@ urlpatterns = [
     path('home/<int:pk>/', human_1.as_view(), name='Human_1'),
     path('add_human/', add_human.as_view(), name='Add_human'),
     path('home/', home, name='Home'),
+
 ]

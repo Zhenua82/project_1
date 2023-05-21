@@ -6,12 +6,13 @@ from django.core.paginator import Paginator
 from django.contrib.auth.forms import UserCreationForm
 
 from .models import News, Category
-from .forms import NewsForm
+from .forms import NewsForm, UserRegisterForm
 
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        # form = UserCreationForm(request.POST)
+        form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'Регистрация прошла успешно')
@@ -19,7 +20,8 @@ def register(request):
         else:
             messages.error(request, 'Ошибка регистрации')
     else:
-        form = UserCreationForm()
+        # form = UserCreationForm()
+        form = UserRegisterForm()
     return render(request, 'News/register.html', {'form': form})
 
 def login(request):

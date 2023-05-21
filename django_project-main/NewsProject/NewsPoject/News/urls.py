@@ -14,8 +14,8 @@ urlpatterns = [
     path('category/<int:category_id>/', NewsByCategory.as_view(), name='Category'),
     path('news/<int:pk>/', ViewNews.as_view(), name='View_news'),
     path('news/add_news', AddNews.as_view(), name='Add_news'),
-    path('/register', register, name='Register'),
-    path('/login', login, name='Login'),
+    path('register', register, name='Register'),
+    path('login', login, name='Login'),
 
-    path('homework/', include('homework.urls'))
+    path('homework/', include('homework.urls')),
 ]
