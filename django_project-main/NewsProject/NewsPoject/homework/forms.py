@@ -2,6 +2,7 @@ from django import forms
 from .models import Human, Profession
 import re
 from django.core.exceptions import ValidationError
+from captcha.fields import CaptchaField
 
 # class HumanForm(forms.Form):
 class HumanForm(forms.ModelForm):
@@ -20,6 +21,8 @@ class HumanForm(forms.ModelForm):
         if age < 0:
             raise ValueError('Возраст не может быть отрицательным')
         return age
+
+    captcha = CaptchaField()
     class Meta:
         model = Human
         # fields = '__all__'
@@ -41,6 +44,7 @@ class HumanForm(forms.ModelForm):
             })
         }
 
+
     # title = forms.CharField(max_length=150, label='Заголовок', widget=forms.TextInput(attrs={
     #     'class': 'form-control'
     # }))
@@ -52,3 +56,5 @@ class HumanForm(forms.ModelForm):
     # category = forms.ModelChoiceField(queryset=Category.objects.all(), label='Категория', empty_label='Выберите категорию', widget=forms.Select(attrs={
     #     'class': 'form-control'
     # }))
+    # profession = forms.ModelChoiceField(queryset=Profession.objects.all(), label='Категория',
+    #                                     empty_label='Выберите категорию')

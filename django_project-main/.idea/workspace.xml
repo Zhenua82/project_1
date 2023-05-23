@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/templates/reg/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/templates/reg/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/reg/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +42,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Homework/Django/django_project-main/NewsProject/NewsPoject/reg",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Homework/Django/django_project-main/NewsProject/NewsPoject/reg&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Homework\Django\django_project-main\NewsProject\NewsPoject\reg" />

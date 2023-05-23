@@ -8,6 +8,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('news/', include('News.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('captcha/', include('captcha.urls')),
     path('reg/', include('reg.urls')),
 ]
 

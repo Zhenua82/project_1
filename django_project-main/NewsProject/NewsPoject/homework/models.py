@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 
 class Human(models.Model):
     Name = models.CharField(max_length=150, verbose_name='Имя')
-    Last_name = models.TextField(blank=True, verbose_name='Фамилия')
+    Last_name = models.CharField(blank=True, max_length=150, verbose_name='Фамилия')
     age = models.IntegerField(verbose_name='Возраст')
     photo = models.ImageField(upload_to='media/%Y/%m/%d', verbose_name='Фото')
     is_published = models.BooleanField(default=True, verbose_name='Публикация')
