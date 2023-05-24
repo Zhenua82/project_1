@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.views.decorators.cache import cache_page
 
 from homework.views import home, get_profession, human_1, add_human
 
@@ -11,6 +12,7 @@ urlpatterns = [
     path('profession/<int:profession_id>/', get_profession.as_view(), name='Profession'),
     path('home/<int:pk>/', human_1.as_view(), name='Human_1'),
     path('add_human/', add_human.as_view(), name='Add_human'),
-    path('home/', home, name='Home'),
+    # path('home/', home, name='Home'),
+    path('home/', cache_page(60)(home), name='Home'),
 
 ]
