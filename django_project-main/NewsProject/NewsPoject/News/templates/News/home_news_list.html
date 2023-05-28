@@ -26,16 +26,19 @@
                 <h6> Фото нет </h6>
                 {% endif %}
             </div>
-            <div class="media-body">
-                <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{i.title}}</h5>
+            <div class="media-body" style="margin-left: 40px;">
+                <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}" style="margin-left: 340px;">{{i.title}}</h5>
                 {% autoescape off %}
-                <p class="card-text">{{i.content|truncatewords:60|linebreaks }}</p>
+                <p class="card-text">{{i.content|truncatewords:120|linebreaks }}</p>
                 {% endautoescape %}
-                <a href="{{ i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
+                <a href="{{ i.get_absolute_url }}" class="btn btn-primary" style="margin-left: 370px;">Read more...</a>
             </div>
         </div>
-        <div class="card-footer text-body-secondary">
-            {{ i.created_at|date:'Y-m-d H:i' }}
+        <div class="card-footer text-muted">
+            <div class="date" style="margin-left: 570px;">
+               {{ i.created_at|date:'Y-m-d H:i' }}
+            </div>
+
         </div>
     </div>
     {% endfor %}

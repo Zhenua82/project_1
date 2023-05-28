@@ -29,6 +29,7 @@
             {% endif %}
         </div>
         <div class="media-body">
+            {% autoescape off %}
             <h5 class="card-title {% cycle 'text-primary' 'text-success' 'text-danger' %}">{{i.Name}}
                 {{i.Last_name}}</h5>
             <p class="card-text">Возраст: {{i.age}} лет</p>
@@ -39,6 +40,7 @@
             <h6> Биография: нет </h6>
             {% endif %}
             <!--                            Биография: {{i.biography|truncatewords:60|default_if_none:"nothing"}}</p>-->
+            {% endautoescape %}
             <a href="{{i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
         </div>
     </div>

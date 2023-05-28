@@ -7,15 +7,15 @@
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/home_news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/view_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templates/News/view_news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/human_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/human_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/templatetags/news_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/NewsPoject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/list_profession.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/list_profession.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebarhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebarhome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

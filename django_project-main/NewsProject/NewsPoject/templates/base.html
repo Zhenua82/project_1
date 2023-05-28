@@ -22,7 +22,7 @@
 <div class="container mt-3" style="margin-left: 0px;">
     <div class="row">
 
-        {% cache 500 sidebar %}
+        {% cache 30 sidebar %}
         <div class="col-md-4">
             {% block sidebar %} SIDEBAR {% endblock %}
         </div>
@@ -41,14 +41,13 @@
             {% endif %}
         {% endfor %}
         {% endif %}
-
         <div class="col-md-8">
             {% block content %} CONTENT {% endblock %}
         </div>
     </div>
 </div>
 {% if page_obj.has_other_pages %}
-<nav aria-label="..." style="margin-left: 800px;">
+<nav aria-label="..." style="margin-left: 950px;">
   <ul class="pagination">
       {% if page_obj.has_previous %}
     <li class="page-item disabled">
@@ -58,7 +57,7 @@
       {% for p in page_obj.paginator.page_range %}
       {% if page_obj.number == p %}
       <li class="page-item active" aria-current="page">
-          <a class="page-link" href="?page={{ p }}">{{ p }} <span class="sr-only"> (текущая) </span> </a>
+          <a class="page-link" href="?page={{ p }}">{{ p }} <span class="sr-only"></span> </a>
       </li>
       {% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3  %}
     <li class="page-item">

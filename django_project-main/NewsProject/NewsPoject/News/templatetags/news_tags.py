@@ -18,5 +18,5 @@ def show_categories(arg1='Перечень', arg2='категорий'):
     categories = cache.get('categories')
     if not categories:
         categories = Category.objects.annotate(cnt=Count('news', filter=F('news__is_published'))).filter(cnt__gt=0)
-        cache.set('categories', categories, 60)
+        cache.set('categories', categories, 30)
     return {'categories': categories, 'arg1': arg1, 'arg2': arg2}

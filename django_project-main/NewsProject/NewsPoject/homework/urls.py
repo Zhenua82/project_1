@@ -13,6 +13,6 @@ urlpatterns = [
     path('home/<int:pk>/', human_1.as_view(), name='Human_1'),
     path('add_human/', add_human.as_view(), name='Add_human'),
     # path('home/', home, name='Home'),
-    path('home/', cache_page(60)(home), name='Home'),
+    path('home/', cache_page(30)(home), name='Home'),
 
 ]
