@@ -19,13 +19,16 @@ from .forms import HumanForm
 #     def get_queryset(self):
 #         # return Human.objects.filter(is_published=True).select_related('profession')
 #         return Human.objects.filter().select_related('profession')
+
 def home(request):
-    human = Human.objects.all()
+    human = Human.objects.filter(is_published=True)
+    human_2 = Human.objects.all()
     professions = Profession.objects.all()
     paginator = Paginator(human, 3)
     page_num = request.GET.get('page', 1)
     page_human = paginator.get_page(page_num)
     context = {
+        'human_2': human_2,
         'human': human,
         'title': 'Список людей',
         'title2': 'Список людей:',
