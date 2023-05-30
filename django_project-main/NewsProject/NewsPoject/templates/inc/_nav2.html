@@ -13,8 +13,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'Add_human' %}">Добавить человека</a>
                 </li>
+                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                   <a class="nav-link" style="color: white; margin-left: 580px; font-weight: 900; background: red;"  href="{% url 'News' %}"> Новости </a>
+                    <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                   <a class="nav-link" style="color: white; margin-left: 520px; font-weight: 900; background: red;"  href="{% url 'News' %}"> Новости </a>
                 </li>
             </ul>
         </div>
@@ -25,5 +30,6 @@
         {% else %}
         <a href="{% url 'Register' %}" style="padding-right: 5px">Регистрация</a>  |  <a href="{% url 'Login' %}" style="padding-left: 5px">Логин</a>
         {% endif %}
+
     </span>
 </nav>

@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9e648c3a-9daa-421e-a2cd-459875482e40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/News/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/human_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/homework/templates/homework/human_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_nav2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebarhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsProject/NewsPoject/templates/inc/_sidebarhome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
